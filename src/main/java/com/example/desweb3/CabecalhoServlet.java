@@ -18,8 +18,8 @@ public class CabecalhoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         String clienteHttp = req.getHeader("user-agent");
-//        resp.getWriter().print("<h1>hm, testando</h1>");
-//        resp.getWriter().print("<p>seu navegador é: "+ clienteHttp +"</p>");
+        //resp.getWriter().print("<h1>hm, testando</h1>");
+        //resp.getWriter().print("<p>seu navegador é: "+ clienteHttp +"</p>");
 
         req.setAttribute("chaveCliente", clienteHttp);
         RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
