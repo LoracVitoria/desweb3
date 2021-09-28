@@ -26,6 +26,14 @@ public class RequisitosServlet extends HttpServlet {
         System.out.println("chamou o método service");
         this.numeroDeAcessos += 1;
         System.out.println("número de acessos: " + numeroDeAcessos);
+
+
+        String protocol = req.getProtocol();
+// lembrar de fazer e por no index mais organizado
+        req.getMethod();
+        req.getRequestURI();
+
+
     }
 
 
